@@ -1,0 +1,233 @@
+.slider {
+    padding: 0;
+    position: relative;
+    width: auto;
+    height: auto;
+    text-align:center;
+}
+
+.hidden {
+    width:0px;
+    height:0px;
+    visibility:hidden;
+}
+
+.slider img {
+    width: 94%;
+    max-width: 800px;
+    max-height: auto;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align:center;
+}
+
+.footer img {
+    width: 94%;
+    max-width:800px;
+    max-height: auto;
+}
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 400%;
+    height: 400px;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    display: block;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 25%;
+    height: 400px;
+}
+
+
+.bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    text-align:center;
+}
+
+@font-face {
+    src: url("../fonts/jeju.ttf");
+    font-family: "jeju";
+}
+
+.poem_box_outer {
+    width: 100%;
+    margin-top:20px;
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.poem_box {
+    display: inline-block;
+    width: 94%;
+    background-color: #ffeeee;
+}
+
+.logo {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-align: center;
+}
+
+
+.notice {
+    font-family: "jeju";
+    font-size: 3vw;
+    width: 100%;
+    text-align: center;
+    color: #555555;
+    line-height: 170%;
+    opacity: 0;
+}
+
+.notice_hidden {
+    font-family: "jeju";
+    font-size: 3vw;
+    width: 100%;
+    text-align: center;
+    color: #555555;
+    opacity: 0;
+}
+
+.btn_toggle1 {
+    font-family: "jeju";
+    font-size: 3vw;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+    color: #555555;
+    line-height: 170%;
+    background-color: #cceeff;
+    border: none;
+}
+
+.btn_toggle2 {
+    font-family: "jeju";
+    font-size: 3vw;
+    width: 60%;
+    max-width: 600px;
+    text-align: center;
+    color: #555555;
+    line-height: 170%;
+    background-color: #ffdddd;
+    border: none;
+}
+
+.btn_copy {
+    font-family: "jeju";
+    font-size: 3vw;
+    width: 94%;
+    max-width: 800px;
+    text-align: center;
+    color: #555555;
+    line-height: 170%;
+    background-color: #ffffff;
+    border: none;
+}
+
+.message {
+    font-family: "jeju";
+    font-size: 2.7vw;
+    width: 100%;
+    text-align: center;
+    color: #555555;
+    line-height: 170%;
+    opacity: 0;
+    font-weight: 1200; /* 더 진하게 설정 */
+}
+
+.images {
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+    max-width: 800px;
+}
+
+.shortcut {
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.shortcutbox {
+    display: inline-block;
+    margin: 0 auto;
+    width: 30%;
+    height:auto;
+    aspect-ratio:1/1;
+}
+
+
+#dimmedbg {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #00000088;
+    display: none;
+}
+
+#photoframe {
+    max-height: 90%;
+    max-width: 90%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.btnbar {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.bodydiv {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+
+body {
+    margin: 0 auto;
+    overflow-x:hidden;
+}
