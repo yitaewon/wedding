@@ -4,13 +4,52 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta property="og:image" content="./imgs/img0014.png">
-    <meta property="og:title" content="2024.04.27">
+    <meta property="og:title" content="2022.06.11">
     <meta property="og:description" content="이태원♡이하얀 저희 결혼합니다 :)">
     <title>2024.04.27</title>
+	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4noqkk5o1g"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./script/jquery-sakura.js"></script>
+	<style>
+		.button {
+			background-color: white;
+			border: 2px solid pink; /* 핑크색 테두리 */
+			color: black; /* 검은색 텍스트 */
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 14px;
+			margin: 4px 2px;
+			transition-duration: 0.4s;
+			cursor: pointer;
+			border-radius: 5px;
+			outline: none; /* 클릭 효과 제거 */
+		}
 
-    <script>$(document).ready(function () {
+		.button.active {
+			background-color: pink;
+			color: white; /* 핑크 버튼일 때 흰색 텍스트 */
+			border-color: pink; /* 핑크 테두리 */
+		}
+		
+		 /* 스타일 초기화 */
+		.highlight {
+			font-family: inherit; /* 기본 글꼴 사용 */
+			font-weight: inherit; /* 기본 값으로 돌아가도록 설정 */
+			color: inherit; /* 기본 값으로 돌아가도록 설정 */
+			text-decoration: none; /* 밑줄 제거 */
+		}
+		
+		.highlight {
+			font-weight: bold; /* 굵은 글씨체 설정 */
+			color: #ff69b4; /* 강조된 텍스트의 색은 핑크색으로 설정 */
+			font-family: 'Noto Sans', sans-serif; /* 새로운 글꼴 적용 */
+		}
+    }
+	</style>
+    <script>	
+	$(document).ready(function () {
             $('.slider').sakura();
 
             $(".bg").scroll(function () {
@@ -77,7 +116,20 @@
         function closePhoto() {
             $("#dimmedbg").css({ "display": "none" });
 
-        }</script>
+        }
+		
+	
+	
+    
+</script>
+
+		
+		
+		
+           
+</script>
+
+
     <link rel="stylesheet" type="text/css" href="./css/jquery-sakura.css" />
     <link rel="stylesheet" type="text/css" href="./css/style_common.css" />
 </head>
@@ -94,7 +146,8 @@
 			
 			<div class="notice">				
 				<br />
-				<strong>2024년 4월 27일, 토요일 오후 2시</strong><br />
+				<strong><span class="highlight">2024년 4월 27일</span><br />
+				토요일 오후 2시</strong><br />
 				<strong>아펠가모 공덕 7층 라로브홀</strong><br />
             </div>
 			
@@ -107,8 +160,7 @@
 					내 인생을 모두 걸고서라도<br />
 					그대와 함께<br />
 					이 길을 가겠습니다.<br />
-					- 알퐁스 도데, <br />
-					<그대가 나의 사랑이 되어 준다면> 중 -<br />
+					- 알퐁스 도데, <그대가 나의 사랑이 되어 준다면> 중 -<br />
 					<br />
 					서로가 서로를 좋아하는 것을<br />
 					기적이라고 합니다.<br />
@@ -135,7 +187,9 @@
                 <div class="shortcutbox">
                     <img class="shortcut" src="./imgs/img0003.jpg" onclick="onClickImg(this)" />
                 </div>
-               
+                <div class="shortcutbox">
+                    <img class="shortcut" src="./imgs/img0004.jpg" onclick="onClickImg(this)" />
+                </div>
                 <div class="shortcutbox">
                     <img class="shortcut" src="./imgs/img0005.jpg" onclick="onClickImg(this)" />
                 </div>
@@ -148,21 +202,25 @@
                 <div class="shortcutbox">
                     <img class="shortcut" src="./imgs/img0008.jpg" onclick="onClickImg(this)" />
                 </div>
-               
+                <div class="shortcutbox">
+                    <img class="shortcut" src="./imgs/img0009.jpg" onclick="onClickImg(this)" />
+                </div>
                 <div class="shortcutbox">
                     <img class="shortcut" src="./imgs/img0010.jpg" onclick="onClickImg(this)" />
                 </div>
                 <div class="shortcutbox">
                     <img class="shortcut" src="./imgs/img0011.jpg" onclick="onClickImg(this)" />
                 </div>
-               
-		<div class="shortcutbox">
+                <div class="shortcutbox">
+                    <img class="shortcut" src="./imgs/img0012.jpg" onclick="onClickImg(this)" />
+                </div>
+				<div class="shortcutbox">
                     <img class="shortcut" src="./imgs/img0013.jpg" onclick="onClickImg(this)" />
                 </div>
                 <div class="shortcutbox">
                     <img class="shortcut" src="./imgs/img0014.jpg" onclick="onClickImg(this)" />
                 </div>
-		<div class="shortcutbox">
+				<div class="shortcutbox">
                     <img class="shortcut" src="./imgs/img0015.jpg" onclick="onClickImg(this)" />
                 </div>
                 <div class="shortcutbox">
@@ -171,11 +229,11 @@
             </div>                  
             <div class="message" style="font-weight: bold;" >
                 <br />
-                서로 오랫동안 찾던 평생의 반려자를 <br />
-		드디어 만나게 되어<br />
-		2024년 4월 27일 토요일<br />
-                저희 두 사람이 부부의 연을 맺고자 합니다.<br />
-                <br />
+                서로 오랫동안 찾던 평생의 반려자를 드디어 만나게 되어<br />
+                <span class="highlight">2024년 4월 27일 토요일</span>
+				<br />저희 두 사람이 부부의 연을 맺고자 합니다.
+				<br />
+				<br />
             </div>
             <div class="notice" style="font-weight: bold;">
                 <strong>마음 전하실 곳(클릭시 복사)</strong>
@@ -183,8 +241,6 @@
                 <button class="btn_toggle1" onclick="showHidden(1)" />신랑측(클릭)</button>
             </div>
             <div class="notice_hidden" id="notice_hidden1" style="font-weight: bold;">
-                <button class="btn_copy" onclick="copyText('우리은행 1002434574796')" /><strong>신랑 이태원 우리은행</strong> <br />1002-434-574796<br /></button>
-				<br>
 				<button class="btn_copy" onclick="copyText('국민은행 063210547751')" /><strong>부 이상규 국민은행</strong> <br />063-21-0547-751<br /></button>
 				<br>
 				<button class="btn_copy" onclick="copyText('국민은행 42880204050731')" /><strong>모 정인란 국민은행</strong> <br />428802-04-050731<br /></button>
@@ -201,13 +257,58 @@
                 <a href="mailto:ltw79@hanmail.net"><img class="btns" src="./imgs/iconmonstr-email.png" width="100px" height="100px" /></a>
                 <a href="sms:01093178923"><img class="btns" src="./imgs/iconmonstr-sms.png" width="100px" height="100px" /></a>
             </div>
-            
-		<div class="message" style="font-weight: bold;" >
+			<div class="container">
+				<section class="section" id="section-3">
+					<div class="notice">
+						<h1>오시는 길</h1>
+					</div>
+					<button id="showMap" class="button active" onclick="showMap()">지도</button>
+					<button id="showImage" class="button" onclick="showImage()">약도</button>
+					</br>
+					<div id="map" style="width: 90%; height: 400px; margin:auto"></div>
+					<div class="image-container" style="display: none;">
+						<img src="./imgs/zido.jpg" style="width: 90%; height: 400px; margin:auto" />
+					</div>
+					<code id="snippet" class="snippet"></code>
+				</section>
+			</div>
 			<br />
-			바쁘시더라도<br />
-			참석해주시면 감사하겠습니다.<br />
-			<br />
-		</div>
+			<div class="message" style="font-weight: bold;" >
+				바쁘시더라도<br />
+				참석해주시면 감사하겠습니다.<br />
+			</div>		
+			<div class="footer">
+                <img src="./imgs/img0017.jpg" />
+            </div>
+			
+			<script>	
+				var map = new naver.maps.Map('map', {
+				center: new naver.maps.LatLng(37.542714, 126.951696), //지도의 초기 중심 좌표
+				zoom: 17, //지도의 초기 줌 레벨
+				minZoom: 8, //지도의 최소 줌 레벨
+				zoomControl: true, //줌 컨트롤의 표시 여부
+				zoomControlOptions: { //줌 컨트롤의 옵션
+					position: naver.maps.Position.TOP_RIGHT
+				}});
+				var marker = new naver.maps.Marker({
+					position: new naver.maps.LatLng(37.542714, 126.951696),
+					map: map
+				});
+				
+				function showMap() {
+					$('#map').fadeIn();
+					$('.image-container').fadeOut();
+					$('#showMap').addClass('active');
+					$('#showImage').removeClass('active');
+				}
+
+				function showImage() {
+					$('#map').fadeOut();
+					$('.image-container').fadeIn();
+					$('#showImage').addClass('active');
+					$('#showMap').removeClass('active');
+				}
+			</script>		          
         </div>
         <div id="dimmedbg" onclick="closePhoto()">
             <img id="photoframe" onclick="closePhoto()" />
