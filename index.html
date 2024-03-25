@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width">
     <meta property="og:image" content="./imgs/img0001.jpg">
     <meta property="og:title" content="2024.04.27">
-    <meta property="og:description" content="이태원♡이하얀 결혼합니다 :)">
+    <meta property="og:description" content="이태원♡이하얀 저희 결혼합니다 :)">
     <title>2024.04.27</title>
 	<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=4noqkk5o1g"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -181,9 +181,7 @@
 		</div>
 
             <div class="images">
-                <div class="shortcutbox">
-                    <img class="shortcut" src="./imgs/img0002.jpg" onclick="onClickImg(this)" />
-                </div>
+              
                 <div class="shortcutbox">
                     <img class="shortcut" src="./imgs/img0003.jpg" onclick="onClickImg(this)" />
                 </div>
@@ -197,17 +195,8 @@
                     <img class="shortcut" src="./imgs/img0006.jpg" onclick="onClickImg(this)" />
                 </div>
                 <div class="shortcutbox">
-                    <img class="shortcut" src="./imgs/img0007.jpg" onclick="onClickImg(this)" />
-                </div>
-                <div class="shortcutbox">
                     <img class="shortcut" src="./imgs/img0008.jpg" onclick="onClickImg(this)" />
-                </div>
-                <div class="shortcutbox">
-                    <img class="shortcut" src="./imgs/img0009.jpg" onclick="onClickImg(this)" />
-                </div>
-                <div class="shortcutbox">
-                    <img class="shortcut" src="./imgs/img0010.jpg" onclick="onClickImg(this)" />
-                </div>
+                </div>         
                 <div class="shortcutbox">
                     <img class="shortcut" src="./imgs/img0011.jpg" onclick="onClickImg(this)" />
                 </div>
@@ -216,16 +205,10 @@
                 </div>
 				<div class="shortcutbox">
                     <img class="shortcut" src="./imgs/img0013.jpg" onclick="onClickImg(this)" />
-                </div>
-                <div class="shortcutbox">
-                    <img class="shortcut" src="./imgs/img0014.jpg" onclick="onClickImg(this)" />
-                </div>
+                </div>           
 				<div class="shortcutbox">
                     <img class="shortcut" src="./imgs/img0015.jpg" onclick="onClickImg(this)" />
-                </div>
-                <div class="shortcutbox">
-                    <img class="shortcut" src="./imgs/img0016.jpg" onclick="onClickImg(this)" />
-                </div>
+                </div>        
             </div>                  
             <div class="message" style="font-weight: bold;" >
                 <br />
@@ -236,32 +219,15 @@
 				<br />
 				<br />
             </div>
-            <div class="notice" style="font-weight: bold;">
-                <strong>마음 전하실 곳(클릭시 복사)</strong>
-                <br />
-                <button class="btn_toggle1" onclick="showHidden(1)" />신랑측(클릭)</button>
-            </div>
-            <div class="notice_hidden" id="notice_hidden1" style="font-weight: bold;">
-				<button class="btn_copy" onclick="copyText('국민은행 063210547751')" /><strong>부 이상규 국민은행</strong> <br />063-21-0547-751<br /></button>
-				<br>
-				<button class="btn_copy" onclick="copyText('국민은행 42880204050731')" /><strong>모 정인란 국민은행</strong> <br />428802-04-050731<br /></button>
-            </div>
-            <div class="notice">
-                <button class="btn_toggle2" onclick="showHidden(2)" />신부측(클릭)</button>
-            </div>
-            <div class="notice_hidden" id="notice_hidden2" style="font-weight: bold;">
-                <button class="btn_copy" onclick="copyText('하나은행 87191013740607')" /><strong>신부 이하얀 하나은행</strong> <br /> 87191013740607<br /></button>
-				<br>
-				<button class="btn_copy" onclick="copyText('신한은행 110497124277')" /><strong>부 이매수 신한은행</strong> <br /> 110497124277 <br /></button>
-            </div>
-            <div class="btnbar">
-                <a href="mailto:ltw79@hanmail.net"><img class="btns" src="./imgs/iconmonstr-email.png" width="100px" height="100px" /></a>
-                <a href="sms:01093178923"><img class="btns" src="./imgs/iconmonstr-sms.png" width="100px" height="100px" /></a>
-            </div>
+			<div class="message" style="font-weight: bold;" >
+				바쁘시더라도<br />
+				참석해주시면 감사하겠습니다.<br />
+			</div>
 			<div class="container">
 				<section class="section" id="section-3">
 					<div class="notice">
 						<h1>오시는 길</h1>
+						<h1>[아펠가모 공덕]</h1>		
 					</div>
 					<button id="showMap" class="button active" onclick="showMap()">지도</button>
 					<button id="showImage" class="button" onclick="showImage()">약도</button>
@@ -274,10 +240,29 @@
 				</section>
 			</div>
 			<br />
-			<div class="message" style="font-weight: bold;" >
-				바쁘시더라도<br />
-				참석해주시면 감사하겠습니다.<br />
-			</div>				
+			
+			<div class="notice" style="font-weight: bold;  font-size: 20px;">
+                <strong>마음 전하실 곳</strong>
+                <br />
+                <button class="btn_toggle1" onclick="showHidden(1)" style="font-weight: bold;  font-size: 15px;"/>신랑측(클릭시 복사)</button>
+            </div>
+            <div class="notice" style="font-weight: bold;">
+				<button class="btn_copy" onclick="copyText('국민은행 063210547751')" style="font-weight: bold;  font-size: 15px;"/><strong>부 이상규 국민은행</strong> <br />063-21-0547-751<br /></button>
+				<br>
+				<button class="btn_copy" onclick="copyText('국민은행 42880204050731')" style="font-weight: bold;  font-size: 15px;"/><strong>모 정인란 국민은행</strong> <br />428802-04-050731<br /></button>
+            </div>
+            <div class="notice">
+                <button class="btn_toggle2" onclick="showHidden(2)" style="font-weight: bold;  font-size: 15px;"/>신부측(클릭시 복사)</button>
+            </div>
+            <div class="notice" style="font-weight: bold;">
+                <button class="btn_copy" onclick="copyText('하나은행 87191013740607')" style="font-weight: bold;  font-size: 15px;"/><strong>신부 이하얀 하나은행</strong> <br /> 87191013740607<br /></button>
+				<br>
+				<button class="btn_copy" onclick="copyText('신한은행 110497124277')" style="font-weight: bold;  font-size: 15px;"/><strong>부 이매수 신한은행</strong> <br /> 110497124277 <br /></button>
+            </div>
+            <div class="btnbar">
+                <a href="mailto:ltw79@hanmail.net"><img class="btns" src="./imgs/iconmonstr-email.png" width="100px" height="100px" /></a>
+                <a href="sms:01093178923"><img class="btns" src="./imgs/iconmonstr-sms.png" width="100px" height="100px" /></a>
+            </div>
 			<script>	
 				var map = new naver.maps.Map('map', {
 				center: new naver.maps.LatLng(37.542714, 126.951696), //지도의 초기 중심 좌표
